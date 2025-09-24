@@ -1,1 +1,27 @@
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background #f3f3f3;
+}
 
+h1 {
+    margin-bottom: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    justify-content: center;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.cell.taken {
+    cursor: not-allowed;
+    background: #eee;
+}
+
+button{
+    padding: 10px 20px;
+}
