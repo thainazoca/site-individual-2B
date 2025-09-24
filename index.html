@@ -9,10 +9,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <main class="container">
     <h1>Jogo da Velha</h1>
-    <div id="game-board" class="board"></div>
-    <p id="status"></p>
+
+    <div class="status">
+    <div id="turn">Vez de: <span id="pĺayer">X</span></div>
     <button id="reset">Reiniciar</button>
-    <script src="script.js"></script>
+    </div>
+
+    <div class="board" id="board"
+    role="grid" aria-label="Jogo da Velha">
+    <!-- 9 células -->
+     <button class="cell" data-index="0"
+     aria-label="celula 2" ></button>
+     <button class= "cell" data-index="1"
+    aria-label= "celula 2"></button>
+    <button class="cell" data-index="2"
+    aria label="celula 3"></button>
+    <button class="cell" data-index="3"
+    aria-label="celula 4"></button>
+    <button class="cell" data-index="4"
+    aria-label="celula 5"></button>
+    <button class="cel" data-index="5"
+    aria-label="celula 6"></button>
+    <button class="cell" data-index="6"
+    aria-label="celula 7"></button>
+    <button class="cell" data-index="7"
+    aria-label="celula 8"></button>
+    <button class="cell" data-index="8"
+    aria-label="celula 9"></button>
+</div>
+
+<div id="message" class="message"
+aria-live="polite"></div>
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
